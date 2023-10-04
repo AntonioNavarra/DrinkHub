@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+
+    <!-- Main app colors -->
+    <color name="white_drinkHub">#FFFFFF</color>
+    <color name="gold_drinkHub">#DFC16E</color>
+    <color name="green_drinkHub">#055444</color>
+    <color name="blue_drinkHub">#2B3B5D</color>
+    <color name="light_grey">#B3B3B3</color>
+
+</resources>

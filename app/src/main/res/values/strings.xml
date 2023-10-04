@@ -1,0 +1,36 @@
+<resources>
+    <!-- Stringhe login fragment -->
+    <string name="tab_login">Accedi</string>
+    <string name="remember_password_label">Ricordami</string>
+    <string name="username_field">username</string>
+    <string name="password_field">password</string>
+    <string name="submit_button">ACCEDI</string>
+    <string name="register_label">Non hai un account ?</string>
+    <string name="register_label2">Registrati </string>
+    <string name="login_label">Accedi al tuo account</string>
+    <string name="title_activity_register">register_activity</string>
+    <string name="create_new_account_label">Crea un nuovo account</string>
+    <string name="remember_me_register">ricorda i miei dati di accesso</string>
+    <string name="register_button_text">ISCRIVITI</string>
+    <string name="register_activity_title">Registrazione</string>
+    <string name="ripeti_password_field">ripeti password</string>
+    <string name="tab_account">Account</string>
+    <string name="type_label">Solitamente bevi </string>
+    <string name="username">username</string>
+    <string name="label_favorites_drink">La tua bevande preferita:</string>
+    <string name="username_register_field">inserisci username</string>
+    <string name="password_register_field">inserisci password</string>
+    <string name="conditions_label">"D'accordo con "</string>
+    <string name="terms_label"><![CDATA[Termini & Condizioni]]></string>
+    <string name="label_account_profile">Carta Profilo</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_label2">Benvenuto</string>
+    <string name="home_label1">Scelti da noi</string>
+    <string name="home_EditText">Cerca un drink, una birra, un vino...</string>
+    <string name="home_search_button">Cerca</string>
+    <string name="home_label3">I tuoi preferiti</string>
+    <string name="home_button">Cerca</string>
+    <string name="button_add_cart">AGGIUNGI AL CARRELLO</string>
+    <string name="error_fragment_label">La ricerca non ha prodotto risultati</string>
+    <string name="results_activity_title">Risultati per :</string>
+</resources>
