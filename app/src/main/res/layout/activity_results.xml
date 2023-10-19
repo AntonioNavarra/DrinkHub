@@ -23,24 +23,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:text="@string/results_activity_title"
+        android:text="@string/results_activity_label"
         android:textColor="@color/white_drinkHub"
         android:textSize="24dp"
-        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/backButton"
         app:layout_constraintStart_toEndOf="@+id/backButton"
         app:layout_constraintTop_toTopOf="@+id/backButton" />
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
+        android:id="@+id/results_label2"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:text="TextView"
+        android:layout_marginEnd="8dp"
+        android:maxLines="1"
+        android:text="Negroni"
         android:textColor="@color/white_drinkHub"
         android:textSize="24dp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/results_label"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/results_label"
         app:layout_constraintTop_toTopOf="@+id/results_label" />
 

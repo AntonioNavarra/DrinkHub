@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/CardView"
+android:layout_width="350dp"
+android:layout_height="wrap_content"
+android:layout_gravity="center"
+android:layout_marginStart="8dp"
+android:layout_marginTop="8dp"
+android:layout_marginEnd="8dp"
+android:layout_marginBottom="8dp"
+app:cardCornerRadius="15dp"
+app:cardElevation="8dp"
+app:layout_constraintBottom_toBottomOf="parent"
+app:layout_constraintEnd_toEndOf="parent"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageProfile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="24dp"
+            android:padding="6dp"
+            android:src="@drawable/ic_dog_test"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <EditText
+            android:id="@+id/name_EditText"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/custom_edit_text3"
+            android:drawableStart="@drawable/ic_baseline_account_circle_24"
+            android:drawablePadding="12dp"
+            android:drawableTint="@color/black"
+            android:ems="10"
+            android:hint="about_toniii"
+            android:inputType="text"
+            android:paddingStart="12dp"
+            android:textAlignment="textStart"
+            android:textColorHint="@color/black"
+            android:textSize="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageProfile"
+            app:layout_constraintTop_toTopOf="@+id/imageProfile" />
+
+        <ImageView
+            android:id="@+id/image_switch"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageProfile"
+            app:layout_constraintEnd_toEndOf="@+id/imageProfile"
+            app:srcCompat="@drawable/baseline_change_circle_24"
+            app:tint="@color/black" />
+
+        <TextView
+            android:id="@+id/favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:text="Il tuo preferito in"
+            android:textColor="@color/light_grey"
+            android:textSize="14dp"
+            app:layout_constraintStart_toEndOf="@+id/imageProfile"
+            app:layout_constraintTop_toBottomOf="@+id/name_EditText" />
+
+        <TextView
+            android:id="@+id/drinkhub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:text="DrinkHub :"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:textColor="@color/green_drinkHub"
+            app:layout_constraintStart_toEndOf="@+id/favorite"
+            app:layout_constraintTop_toTopOf="@+id/favorite" />
+
+        <TextView
+            android:id="@+id/drink_favorites"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Negroni"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/drinkhub"
+            app:layout_constraintStart_toStartOf="@+id/favorite"
+            app:layout_constraintTop_toBottomOf="@+id/favorite" />
+
+        <TextView
+            android:id="@+id/profile"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="@drawable/gradient_bg"
+            android:paddingTop="5dp"
+            android:text="Carta Profilo"
+            android:textAlignment="center"
+            android:textColor="@color/white_drinkHub"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_close"
+            app:tint="@color/white_drinkHub" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

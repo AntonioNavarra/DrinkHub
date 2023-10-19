@@ -6,7 +6,8 @@
     <color name="white_drinkHub">#FFFFFF</color>
     <color name="gold_drinkHub">#DFC16E</color>
     <color name="green_drinkHub">#055444</color>
-    <color name="blue_drinkHub">#2B3B5D</color>
     <color name="light_grey">#B3B3B3</color>
+    <color name="dark_grey">#767676</color>
+
 
 </resources>

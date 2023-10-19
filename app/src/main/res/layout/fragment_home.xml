@@ -13,6 +13,16 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <ImageView
+            android:id="@+id/image_drinkhub"
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/ic_logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <androidx.viewpager2.widget.ViewPager2
             android:id="@+id/viewPagerSlide"
             android:layout_width="match_parent"
@@ -29,7 +39,7 @@
             android:layout_width="0dp"
             android:layout_height="35dp"
             android:layout_marginStart="16dp"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="32dp"
             android:layout_marginEnd="16dp"
             android:background="@drawable/custom_edit_text"
             android:backgroundTint="@color/white_drinkHub"
@@ -37,29 +47,75 @@
             android:drawablePadding="10dp"
             android:drawableTint="@color/gold_drinkHub"
             android:ems="10"
-            android:hint="@string/home_EditText"
+            android:hint="@string/home_Edit"
             android:inputType="text"
             android:paddingStart="15dp"
             android:textColorHint="@color/light_grey"
             android:textSize="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
 
         <Button
             android:id="@+id/searchBtn"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
             android:layout_marginEnd="16dp"
             android:backgroundTint="@color/gold_drinkHub"
-            android:text="@string/home_search_button"
+            android:text="@string/home_button"
             android:textColor="@color/white_drinkHub"
             android:textSize="18dp"
+            android:textStyle="bold"
             app:cornerRadius="15dp"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cocktail_button" />
+
+        <CheckBox
+            android:id="@+id/cocktail_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:buttonTint="@color/gold_drinkHub"
+            android:text="@string/home_button2"
+            android:textColor="@color/white_drinkHub"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            app:cornerRadius="0dp"
+            app:layout_constraintStart_toStartOf="@+id/searchBtn"
             app:layout_constraintTop_toBottomOf="@+id/textSearched" />
+
+        <CheckBox
+            android:id="@+id/smoothie_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/gold_drinkHub"
+            android:text="@string/home_button3"
+            android:textColor="@color/white_drinkHub"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            app:cornerRadius="0dp"
+            app:layout_constraintEnd_toStartOf="@+id/alcohol_free_button"
+            app:layout_constraintStart_toEndOf="@+id/cocktail_button"
+            app:layout_constraintTop_toTopOf="@+id/cocktail_button" />
+
+        <CheckBox
+            android:id="@+id/alcohol_free_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:buttonTint="@color/gold_drinkHub"
+            android:text="@string/home_button4"
+            android:textColor="@color/white_drinkHub"
+            android:textSize="13dp"
+            android:textStyle="bold"
+            app:cornerRadius="0dp"
+            app:layout_constraintEnd_toEndOf="@+id/searchBtn"
+            app:layout_constraintTop_toTopOf="@+id/smoothie_button" />
 
         <TextView
             android:id="@+id/Popolari"
@@ -77,8 +133,8 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/list_film"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_height="220dp"
+            android:layout_marginTop="8dp"
             android:scrollbarStyle="insideInset"
             android:scrollbars="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
@@ -90,7 +146,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginTop="48dp"
+            android:layout_marginTop="32dp"
             android:text="@string/home_label3"
             android:textColor="@color/white_drinkHub"
             android:textSize="18dp"
@@ -101,8 +157,8 @@
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/latest_film"
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="24dp"
+            android:layout_height="220dp"
+            android:layout_marginTop="8dp"
             android:scrollbarStyle="insideInset"
             android:scrollbars="horizontal"
             app:layout_constraintEnd_toEndOf="parent"
@@ -110,31 +166,18 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/Top_Rated" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="32dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="24dp"
-            android:text="@string/home_label2"
-            android:textColor="@color/white_drinkHub"
-            android:textSize="24dp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
         <ImageView
             android:id="@+id/imageView3"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginEnd="8dp"
+            android:layout_marginEnd="16dp"
             android:src="@drawable/ic_dog_test"
-            app:layout_constraintBottom_toBottomOf="@+id/textView"
+            app:layout_constraintBottom_toBottomOf="@+id/image_drinkhub"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/textView" />
+            app:layout_constraintTop_toTopOf="@+id/image_drinkhub" />
 
         <ImageView
-            android:id="@+id/imageView4"
+            android:id="@+id/ic_cart"
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginEnd="16dp"
@@ -143,6 +186,18 @@
             app:layout_constraintEnd_toStartOf="@+id/imageView3"
             app:layout_constraintTop_toTopOf="@+id/imageView3"
             app:tint="@color/white_drinkHub" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="about_toniii"
+            android:textStyle="bold"
+            android:textColor="@color/white_drinkHub"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="@+id/imageView3"
+            app:layout_constraintStart_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.core.widget.NestedScrollView>

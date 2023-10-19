@@ -9,8 +9,8 @@
 
     <item android:state_enabled="true">
         <shape android:shape="rectangle">
-            <corners android:radius="15dp"/>
-            <stroke android:color="@color/white_drinkHub" android:width="1dp"/>
+            <corners android:radius="5dp"/>
+            <stroke android:color="@color/black" android:width="1dp"/>
         </shape>
     </item>
 </selector>
