@@ -1,14 +1,16 @@
-package com.example.drinkhub;
+package com.example.drinkhub.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class resultsActivity extends AppCompatActivity {
+import com.example.drinkhub.R;
+
+public class registerActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_results);
+        setContentView(R.layout.activity_register);
     }
 }

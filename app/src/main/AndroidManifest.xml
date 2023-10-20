@@ -13,16 +13,19 @@
         android:theme="@style/Theme.DrinkHub"
         tools:targetApi="31">
         <activity
-            android:name=".noConnectionActivity"
+            android:name=".activities.loginActivity"
             android:exported="false" />
         <activity
-            android:name=".cartActivity"
+            android:name=".activities.noConnectionActivity"
             android:exported="false" />
         <activity
-            android:name=".resultsActivity"
+            android:name=".activities.cartActivity"
             android:exported="false" />
         <activity
-            android:name=".registerActivity"
+            android:name=".activities.resultsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activities.registerActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

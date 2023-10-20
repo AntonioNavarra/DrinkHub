@@ -5,7 +5,7 @@
     android:background="@color/green_drinkHub"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".registerActivity">
+    tools:context=".activities.registerActivity">
 
     <ImageButton
         android:id="@+id/backButton"
