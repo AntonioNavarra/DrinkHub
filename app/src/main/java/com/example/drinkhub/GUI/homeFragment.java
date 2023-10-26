@@ -1,4 +1,4 @@
-package com.example.drinkhub.fragments;
+package com.example.drinkhub.GUI;
 
 import android.os.Bundle;
 

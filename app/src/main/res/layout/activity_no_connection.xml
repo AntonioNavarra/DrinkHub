@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/green_drinkHub"
-    tools:context=".activities.noConnectionActivity">
+    tools:context=".GUI.noConnectionActivity">
 
     <ImageView
         android:id="@+id/imageView8"

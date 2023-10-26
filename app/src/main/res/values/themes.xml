@@ -1,9 +1,15 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.DrinkHub" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Theme.DrinkHub" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/green_drinkHub</item>
+        <item name="colorPrimaryVariant">@color/gold_drinkHub</item>
+        <item name="colorOnPrimary">@color/white_drinkHub</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/gold_drinkHub</item>
+        <item name="colorSecondaryVariant">@color/gold_drinkHub</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/black</item>
     </style>
-
-    <style name="Theme.DrinkHub" parent="Base.Theme.DrinkHub" />
 </resources>

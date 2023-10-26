@@ -5,7 +5,7 @@
     android:background="@color/green_drinkHub"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activities.registerActivity">
+    tools:context=".GUI.registerActivity">
 
     <ImageButton
         android:id="@+id/backButton"
@@ -60,11 +60,11 @@
                 android:textColor="@color/black"
                 android:textSize="14dp"
                 android:textStyle="bold"
-                app:layout_constraintStart_toStartOf="@+id/user_EditText"
+                app:layout_constraintStart_toStartOf="@+id/new_user_EditText"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
-                android:id="@+id/user_EditText"
+                android:id="@+id/new_user_EditText"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginStart="32dp"
@@ -87,13 +87,13 @@
                 app:layout_constraintTop_toBottomOf="@+id/createAccount_label" />
 
             <EditText
-                android:id="@+id/password_EditText"
+                android:id="@+id/new_password_EditText"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginStart="32dp"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="16dp"
                 android:layout_marginEnd="32dp"
-                android:background="@drawable/custom_edit_text2"
+                android:background="@drawable/custom_edit_text3"
                 android:drawableStart="@drawable/ic_baseline_lock_24"
                 android:drawablePadding="12dp"
                 android:drawableTint="@color/black"
@@ -106,7 +106,7 @@
                 android:textSize="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/user_EditText" />
+                app:layout_constraintTop_toBottomOf="@+id/new_user_EditText" />
 
             <CheckBox
                 android:id="@+id/checkbox_terms"
@@ -120,7 +120,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.25"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/password_EditText" />
+                app:layout_constraintTop_toBottomOf="@+id/new_password_EditText" />
 
             <TextView
                 android:id="@+id/terms_label"
@@ -155,7 +155,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/checkbox_terms" />
         </androidx.constraintlayout.widget.ConstraintLayout>
-
     </ScrollView>
 
     <ImageView

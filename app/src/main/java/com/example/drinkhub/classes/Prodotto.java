@@ -2,7 +2,7 @@ package com.example.drinkhub.classes;
 
 import java.io.Serializable;
 
-public class bevanda implements Serializable {
+public class Prodotto implements Serializable {
     private int idBevanda;
     private String nome;
     private float prezzo;
@@ -29,14 +29,6 @@ public class bevanda implements Serializable {
         this.prezzo = prezzo;
     }
 
-    public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
-
     public String getDescrizione() {
         return descrizione;
     }
@@ -45,7 +37,7 @@ public class bevanda implements Serializable {
         this.descrizione = descrizione;
     }
 
-    public bevanda(int id, String nome, float prezzo, String tipo, String descrizione) {
+    public Prodotto(int id, String nome, float prezzo, String tipo, String descrizione) {
         this.idBevanda = idBevanda;
         this.nome = nome;
         this.prezzo = prezzo;
@@ -53,7 +45,21 @@ public class bevanda implements Serializable {
         this.descrizione = descrizione;
     }
 
+    public String getTipo() {
+        return tipo;
+    }
 
-
-
+    public void setTipo(String tipo) {
+        switch (tipo) {
+            case "alcolico":
+                this.tipo = "Alcolico";
+                break;
+            case"analcolico":
+                this.tipo="Analcolico";
+                break;
+            case"cocktail":
+                this.tipo="Cocktail";
+                break;
+        }
+    }
 }

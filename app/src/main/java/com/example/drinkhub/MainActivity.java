@@ -4,9 +4,11 @@ import android.os.Bundle;
 import android.os.Handler;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.drinkhub.activities.loginActivity;
+import com.example.drinkhub.GUI.loginActivity;
+import com.example.drinkhub.classes.Utente;
 
 public class MainActivity extends AppCompatActivity {
+    public static Utente utente = new Utente(null, null, null,null);
 
     // Durata della schermata di caricamento in millisecondi
     private static final int screen_timeout = 3000;

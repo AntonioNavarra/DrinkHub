@@ -1,12 +1,11 @@
 <resources>
     <!-- Stringhe login fragment -->
-    <string name="login_label">Accedi</string>
+    <string name="login_label">Benvenuto su</string>
     <string name="login_label2">Ricordami</string>
     <string name="login_edit">username</string>
     <string name="login_Edit2">password</string>
     <string name="login_button">ACCEDI</string>
-    <string name="login_label4">Non hai un account ?</string>
-    <string name="login_button2">Registrati </string>
+    <string name="login_label4">Non hai un account? Registrati</string>
     <string name="login_label3">Accedi al tuo account</string>
     <string name="register_activity_label2">Crea un nuovo account</string>
     <string name="register_activity_button">ISCRIVITI</string>
